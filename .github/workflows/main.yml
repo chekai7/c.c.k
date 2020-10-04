@@ -17,7 +17,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install and Test
         run: |
-          npm
           npm run  test
         env:
           CI: true
@@ -34,4 +33,4 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.COMMIT_SECRET }}
           BRANCH: gh-pages
           FOLDER: build
-          BUILD_SCRIPT: cp .env.example .env.local && npm && npm run  build
+          BUILD_SCRIPT: cp .env.example .env.local &&  npm run  build
