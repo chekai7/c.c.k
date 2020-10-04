@@ -4,42 +4,21 @@ on:
     branches:
       - master
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@master # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run the tests and generate coverage report
-        run: npm test -- --coverage
-
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
-
-      - name: Build
-        run: npm run build
-
-      - name: Deploy
+          persist-credentials: false
+      - name: Install and Build
         run: |
-          git config --global user.name chekai7
-          git config --global user.email rockkcor75@gmail.com
-          git remote set-url origin https://${secrets.COMMIT_SECRET}@github.com/chekai7/c.c.k.git
-          npm run deploy
-        env:
-          user_name: "github-actions[bot]"
-          user_email: "github-actions[bot]@users.noreply.github.com"
-          github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-          repository: ${{ github.repository }}
+          npm install
+          npm run-script build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.COMMIT_SECRET }}
+          BRANCH: gh-pages
+          FOLDER: build
+          BUILD_SCRIPT: npm install && npm run build
