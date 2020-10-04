@@ -14,7 +14,7 @@ const Portfolio = () => {
       <div id="images">
         <Container>
           <div className="title">
-            <h3>作品集</h3>
+            <h3>作品集1</h3>
           </div>
           <Row>
             <Col md="3" sm="6">
