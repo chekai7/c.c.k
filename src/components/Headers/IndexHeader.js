@@ -24,13 +24,13 @@ function IndexHeader() {
               <div className="fog-low">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
               </div>
+              <h2 className="presentation-subtitle text-center">
+                Personal Diary
+              </h2>
               <div className="fog-low right">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
               </div>
             </div>
-            <h2 className="presentation-subtitle text-center">
-              Personal Diary
-            </h2>
           </Container>
         </div>
         <div
