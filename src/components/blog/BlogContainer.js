@@ -14,28 +14,27 @@ const Portfolio = () => {
       <div id="images">
         <Container>
           <div className="title">
-            <h3>作品集1</h3>
+            <h3>部落格</h3>
           </div>
           <Row>
             <Col md="3" sm="6">
               <h4 className="images-title">
                 <a
-                  href="https://hamburger-75e31.web.app/#"
-                  onclick='window.open("https://hamburger-75e31.web.app/", "myWin", "scrollbars=yes,width=400,height=650"); return false;'
+                  href="https://hackmd.io/@cckai/Sk1sUpf8v"
+                  onclick='window.open("https://hackmd.io/@cckai/Sk1sUpf8v", "myWin", "scrollbars=yes,width=400,height=650"); return false;'
                   target="_blank"
                 >
-                  Hamburger1
+                  function programing
                 </a>
               </h4>
               <img
                 alt="..."
                 onclick="window.open('http://tw.yahoo.com');"
                 className="img-rounded img-responsive"
-                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=602&q=80"
+                src={FP}
+                height={210}
               />
-
-              <h4>前端:React & Redux</h4>
-              <h4>資料庫:FireBase</h4>
+              <h4>Function programing 介紹</h4>
             </Col>
           </Row>
         </Container>

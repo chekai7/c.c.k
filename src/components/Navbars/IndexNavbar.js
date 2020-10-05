@@ -129,10 +129,10 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 target="_self"
-                onClick={() => history.push("/example")}
+                onClick={() => history.push("/blog")}
                 style={{ cursor: "pointer" }}
               >
-                <i className="nc-icon nc-bulb-63" /> 範例
+                <i className="nc-icon nc-bulb-63" /> 部落格
               </NavLink>
             </NavItem>
           </Nav>

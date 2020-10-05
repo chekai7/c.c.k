@@ -5,6 +5,7 @@ import ProfilePage from "views/examples/ProfilePage.js"
 import RegisterPage from "views/examples/RegisterPage.js"
 import ExampleSections from "components/examples/ExampleSections"
 import Portfolio from "components/portfolio/Portfolio"
+import Blog from "components/blog/BlogContainer"
 
 const themeRoutes = [
   { path: "/index", component: Index },
@@ -14,6 +15,7 @@ const themeRoutes = [
   { path: "/profile-page", component: ProfilePage },
   { path: "/example", component: ExampleSections },
   { path: "/portfolio", component: Portfolio },
+  { path: "/blog", component: Blog },
 ]
 
 export default themeRoutes
