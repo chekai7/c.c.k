@@ -6,6 +6,7 @@ import RegisterPage from "views/examples/RegisterPage.js"
 import ExampleSections from "components/examples/ExampleSections"
 import Portfolio from "components/portfolio/Portfolio"
 import Blog from "components/blog/BlogContainer"
+import AboutMe from "components/about/AboutMe"
 
 const themeRoutes = [
   { path: "/index", component: Index },
@@ -13,9 +14,10 @@ const themeRoutes = [
   { path: "/landing-page", component: LandingPage },
   { path: "/register-page", component: RegisterPage },
   { path: "/profile-page", component: ProfilePage },
-  { path: "/example", component: ExampleSections },
+  { path: "/examplek", component: ExampleSections },
   { path: "/portfolio", component: Portfolio },
   { path: "/blog", component: Blog },
+  { path: "/aboutme", component: AboutMe },
 ]
 
 export default themeRoutes

@@ -7,6 +7,8 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js"
 import IndexHeader from "components/Headers/IndexHeader.js"
 import DemoFooter from "components/Footers/DemoFooter.js"
 
+import AboutMe from "components/about/AboutMe"
+
 // index sections
 import SectionButtons from "views/index-sections/SectionButtons.js"
 // import SectionNavbars from "views/index-sections/SectionNavbars.js"
@@ -35,19 +37,8 @@ function Index() {
       <IndexNavbar />
       <IndexHeader />
       <div className="main">
-        <SectionButtons />
-        {/* <SectionNavbars />
-        <SectionNavigation />
-        <SectionProgress />
-        <SectionNotifications />
-        <SectionTypography />
-        <SectionJavaScript />
-        <SectionCarousel />
-        <SectionNucleoIcons />
-        <SectionDark />
-        <SectionLogin />
-        <SectionExamples />
-        <SectionDownload /> */}
+        <AboutMe />
+
         <DemoFooter />
       </div>
     </>
