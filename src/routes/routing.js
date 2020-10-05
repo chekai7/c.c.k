@@ -9,7 +9,7 @@ import Blog from "components/blog/BlogContainer"
 import AboutMe from "components/about/AboutMe"
 
 const themeRoutes = [
-  { path: "/", component: Index },
+  { path: "/index", component: Index },
   { path: "/nucleo-icons", component: NucleoIcons },
   { path: "/landing-page", component: LandingPage },
   { path: "/register-page", component: RegisterPage },
