@@ -24,7 +24,7 @@ const Portfolio = () => {
                   onclick='window.open("https://hamburger-75e31.web.app/", "myWin", "scrollbars=yes,width=400,height=650"); return false;'
                   target="_blank"
                 >
-                  Hamburger1
+                  Hamburger
                 </a>
               </h4>
               <img
