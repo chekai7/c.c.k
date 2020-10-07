@@ -76,6 +76,7 @@ const AboutMe = () => {
 
             <CardContainer>
               <Cover>
+                <Text> JenkinsCI </Text>
                 <Text> Git </Text>
                 <Text> Heroku </Text>
               </Cover>
