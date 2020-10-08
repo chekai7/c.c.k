@@ -6,6 +6,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js"
 import IndexHeader from "components/Headers/IndexHeader.js"
 
 import { Pack, Cover, Back, Text, CardContainer } from "./Pack.js"
+import { SpotH1, SpotlightContainer, KeyformSpotlight } from "./Discord.js"
 
 const AboutMe = () => {
   return (
@@ -84,6 +85,10 @@ const AboutMe = () => {
             </CardContainer>
           </Row>
         </Container>
+        <br />
+        <SpotlightContainer>
+          <SpotH1 data-spotlight=" Discover ME!">Discover ME! </SpotH1>
+        </SpotlightContainer>
       </div>
     </div>
   )
