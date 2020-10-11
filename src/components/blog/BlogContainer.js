@@ -34,7 +34,7 @@ const Portfolio = () => {
                 src={FP}
                 height={210}
               />
-              <h4>Function programing 介紹</h4>
+              <h4>Functional programing 介紹</h4>
             </Col>
           </Row>
         </Container>
