@@ -55,8 +55,9 @@ export const SpotH1 = styled.div`
 
   @media screen and (min-width: 100px) and (max-width: 720px) {
     color: #ffcccc;
-    font-size: 5rem;
+    font-size: 4rem;
     letter-spacing: 2px;
+    left: 5%;
   }
 `
 
