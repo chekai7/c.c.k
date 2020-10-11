@@ -24,7 +24,7 @@ const Portfolio = () => {
                   onclick='window.open("https://hackmd.io/@cckai/Sk1sUpf8v", "myWin", "scrollbars=yes,width=400,height=650"); return false;'
                   target="_blank"
                 >
-                  function programing
+                  functional programing
                 </a>
               </h4>
               <img
