@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Alert, Button, Container, Row, Col } from "reactstrap"
 import FP from "assets/img/function_programing.png"
 
@@ -9,6 +9,8 @@ import { Pack, Cover, Back, Text, CardContainer } from "./Pack.js"
 import { SpotH1, SpotlightContainer, KeyformSpotlight } from "./Discord.js"
 
 const AboutMe = () => {
+  const [rotate, setRotate] = useState(false)
+
   return (
     <div>
       <div id="images">
@@ -57,7 +59,11 @@ const AboutMe = () => {
           <br />
           <h6>前端&&後端&&工具</h6>
           <Row>
-            <CardContainer>
+            <CardContainer
+              onClick={() => {
+                setRotate(!rotate)
+              }}
+            >
               <Cover>
                 <Text> React.js </Text>
                 <Text> Scss </Text>
@@ -65,7 +71,11 @@ const AboutMe = () => {
               <Back>前端</Back>
             </CardContainer>
 
-            <CardContainer>
+            <CardContainer
+              onClick={() => {
+                setRotate(!rotate)
+              }}
+            >
               <Cover>
                 <Text> Node.js </Text>
                 <Text> Express </Text>
@@ -75,7 +85,11 @@ const AboutMe = () => {
               <Back>後端</Back>
             </CardContainer>
 
-            <CardContainer>
+            <CardContainer
+              onClick={() => {
+                setRotate(!rotate)
+              }}
+            >
               <Cover>
                 <Text> JenkinsCI </Text>
                 <Text> Git </Text>

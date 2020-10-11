@@ -82,4 +82,5 @@ export const CardContainer = styled.div`
       transform: rotatey(0deg);
     }
   }
+  transform: ${(props) => (props.rotate ? `rotatey(180deg)` : `rotatey(0deg)`)};
 `
