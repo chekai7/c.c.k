@@ -27,7 +27,6 @@ const rotate = keyframes`
 `
 
 export const SpotH1 = styled.div`
-  color: #333;
   font-family: Helvetica;
   margin: 0;
   padding: 0;
@@ -54,7 +53,7 @@ export const SpotH1 = styled.div`
     background-clip: text;
   }
 
-  @media screen and (min-width: 100px) and (max-width: 500px) {
+  @media screen and (min-width: 100px) and (max-width: 720px) {
     color: #ffcccc;
     font-size: 5rem;
     letter-spacing: 2px;
