@@ -53,6 +53,12 @@ export const SpotH1 = styled.div`
     -webkit-background-clip: text;
     background-clip: text;
   }
+
+  @media screen and (min-width: 100px) and (max-width: 500px) {
+    color: #ffcccc;
+    font-size: 5rem;
+    letter-spacing: 2px;
+  }
 `
 
 export const KeyformSpotlight = styled.div``
