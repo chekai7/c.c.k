@@ -1,6 +1,5 @@
 import React from "react"
-import { Button, Container, Row, Col } from "reactstrap"
-import FP from "assets/img/function_programing.png"
+import { Container, Row, Col } from "reactstrap"
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js"
 import IndexHeader from "components/Headers/IndexHeader.js"

@@ -1,6 +1,7 @@
 import React from "react"
-import { Button, Container, Row, Col } from "reactstrap"
+import { Container, Row, Col } from "reactstrap"
 import FP from "assets/img/function_programing.png"
+import useReducer from "assets/img/useReducer.png"
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js"
 import IndexHeader from "components/Headers/IndexHeader.js"
@@ -17,7 +18,8 @@ const Portfolio = () => {
             <h3>部落格</h3>
           </div>
           <Row>
-            <Col md="3" sm="6">
+            <Col md="4" sm="8">
+              <h4>Functional programing 介紹</h4>
               <h4 className="images-title">
                 <a
                   href="https://hackmd.io/@cckai/Sk1sUpf8v"
@@ -34,7 +36,25 @@ const Portfolio = () => {
                 src={FP}
                 height={210}
               />
-              <h4>Functional programing 介紹</h4>
+            </Col>
+            <Col md="4" sm="8">
+              <h4>React hook 介紹</h4>
+              <h4 className="images-title">
+                <a
+                  href="https://hackmd.io/@cckai/SkFhBKSFw"
+                  onclick='window.open("https://hackmd.io/@cckai/SkFhBKSFw", "myWin", "scrollbars=yes,width=400,height=650"); return false;'
+                  target="_blank"
+                >
+                  useRucer
+                </a>
+              </h4>
+              <img
+                alt="..."
+                onclick='window.open("https://hackmd.io/@cckai/SkFhBKSFw", "myWin", "scrollbars=yes,width=400,height=650"); return false;'
+                className="img-rounded img-responsive"
+                src={useReducer}
+                height={210}
+              />
             </Col>
           </Row>
         </Container>

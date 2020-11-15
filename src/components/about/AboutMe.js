@@ -1,12 +1,10 @@
 import React, { useState } from "react"
-import { Alert, Button, Container, Row, Col } from "reactstrap"
-import FP from "assets/img/function_programing.png"
+import { Container, Row, Col } from "reactstrap"
+// import IndexNavbar from "components/Navbars/IndexNavbar.js"
+// import IndexHeader from "components/Headers/IndexHeader.js"
 
-import IndexNavbar from "components/Navbars/IndexNavbar.js"
-import IndexHeader from "components/Headers/IndexHeader.js"
-
-import { Pack, Cover, Back, Text, CardContainer } from "./Pack.js"
-import { SpotH1, SpotlightContainer, KeyformSpotlight } from "./Discord.js"
+import { Cover, Back, Text, CardContainer } from "./Pack.js"
+import { SpotH1, SpotlightContainer } from "./Discord.js"
 
 const AboutMe = () => {
   const [rotate, setRotate] = useState(false)
